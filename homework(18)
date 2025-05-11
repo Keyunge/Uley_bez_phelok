@@ -1,0 +1,62 @@
+from turtle import *
+
+def shest():
+    begin_fill()
+    fillcolor("yellow")
+    for i in range(7):
+        fd(40)
+        lt(360/6)
+    end_fill()
+
+def liniya():
+    lt(30)
+    shest()
+    fd(40)
+    lt(180)
+    shest()
+    fd(40)
+    lt(60)
+    fd(40)
+    rt(60)
+    shest()
+    fd(40)
+    lt(60)
+    fd(40)
+    rt(180)
+    shest()
+    fd(40)
+    lt(60)
+    fd(40)
+    rt(60)
+    shest()
+    fd(40)
+    lt(60)
+    fd(40)
+    rt(180)
+    shest()
+
+liniya()
+
+penup()
+lt(30)
+goto(35,-60)
+pendown()
+liniya()
+
+penup()
+lt(30)
+goto(70,-120)
+pendown()
+liniya()
+
+penup()
+lt(30)
+goto(105,-180)
+pendown()
+liniya()
+
+penup()
+lt(30)
+goto(140,-240)
+pendown()
+liniya()
